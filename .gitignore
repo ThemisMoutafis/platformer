@@ -8,3 +8,5 @@ __pycache__/
 .env
 
 assets/
+
+nameless_platformer_game/stages/__pycache__/
