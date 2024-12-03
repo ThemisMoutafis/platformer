@@ -2,11 +2,11 @@ import pygame
 from hero.hero import Hero
 from stages.data import stages, grass as gr, current_stage_index as csi
 
-sprite_walk_path = "hero/sprites/WALK.png"
-sprite_attack_path = "hero/sprites/ATTACK1.png"
-sprite_jump_path = "hero/sprites/JUMP.png"
-sprite_defense_path = "hero/sprites/DEFEND.png"
-sprite_idle_path = "hero/sprites/IDLE.png"
+sprite_walk_path = "../assets/hero_sprites/WALK.png"
+sprite_attack_path = "../assets/hero_sprites/ATTACK1.png"
+sprite_jump_path = "../assets/hero_sprites/JUMP.png"
+sprite_defense_path = "../assets/hero_sprites/DEFEND.png"
+sprite_idle_path = "../assets/hero_sprites/IDLE.png"
 def stage_transition(x,c,stages):
     if x >= 760:
         c = (c + 1) % len(stages)  # Cycle through stages
