@@ -1,4 +1,5 @@
 import pygame
+from Hero_states import HeroState as state
 
 
 class Hero:
@@ -23,6 +24,9 @@ class Hero:
         self.move_right = False
         self.move_left = False
         self.idle = True
+
+        self.state = state.IDLE    ##### toDo , replace all instances of states with the enum State.
+
         self.flipped = False
         self.attack_animation_done = False 
         self.defense_animation_done = False
@@ -53,6 +57,8 @@ class Hero:
         self.idle_frames = self.load_frames(sprite_idle_path,7)
 
         #####################################
+    def set_state(self, state: state):
+        self.state = state
 
     def load_frames(self, sprite_path, frame_number):
         """
