@@ -46,6 +46,8 @@ By looking up this project it may help you learn:
    git clone https://github.com/yourusername/unnamed-2d-platformer.git
    cd unnamed-2d-platformer
 ---
-**IMPORTANT**: at this point, no assets are uploaded since i don't actually own any. in future updates there will be though.
-For now if you want to test it, you will have to add your own assets such as a hero sprite and animations. The code allows 
-for fallbacks though, so you can run it without any. Just be prepared for your hero to be a big red rectangle.
+
+2. Run the app ( make sure you're in the right directory! ) : 
+   ```bash 
+   py main.py
+---
